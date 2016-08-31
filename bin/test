@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+export PORT="8065"
+export VCAP_SERVICES='{"mongodb":[{"credentials":{"hostname":"192.168.12.244","host":"192.168.12.244","port":12832,"username":"d2fac99c-c7be-42de-9ca1-8e998563f8a6","password":"2d56c6e7-6e2e-41b0-829f-53e6d144b04a","name":"4667d438-7c74-4ebd-aee3-b19dc967b1d7","db":"db","url":"mongodb://d2fac99c-c7be-42de-9ca1-8e998563f8a6:2d56c6e7-6e2e-41b0-829f-53e6d144b04a@192.168.12.244:12832/db"},"syslog_drain_url":null,"label":"mongodb","provider":"core","plan":"100","name":"mongodb-inst","tags":["nosql","document","mongodb","data_management","ibm_experimental"]}]}'
+
+export VCAP_APPLICATION='{"application_id":"05b41155-9773-48be-8c6c","application_name":"mattermost","application_uris":["mattermost-ah.test.io"],"application_version":"44478127-f1d3-4d37-995b","limits":{"disk":1024,"fds":16384,"mem":1024},"name":"mattermost-ah","space_id":"96ecb509-9063-41b7-ac36-147e5f145549","space_name":"development","uris":["mattermost.app.io"],"users":null,"version":"44478127-f1d3-4d37-995b" }'
+go run main.go
